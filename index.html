@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Masía - Under Construction</title>
+    <title>La Masía</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: red;
+
+            /* --- Fondo con imagen --- */
+            background-image: url("background.jpg"); /* Cambia extensión si toca */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;  /* NO deforma la imagen */
+            background-color: black;   /* Bordes si la imagen no llena */
+            
+            /* --- Centrado del contenido --- */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+
             font-family: Impact, sans-serif;
         }
         
         .container {
             text-align: center;
+            color: white;
+            text-shadow: 0 0 8px rgba(0,0,0,0.8);
         }
         
         .banner {
-            color: white;
             font-size: clamp(2.5rem, 8vw, 4rem);
             margin-bottom: 1rem;
         }
@@ -32,10 +42,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="banner">La Masía</div>
-        <div class="emojis">🚧 👷 🏗️</div>
+        <div class="banner">La Masía 2026</div>
+        <div class="emojis">próximamente</div>
     </div>
 </body>
+
 </html>
