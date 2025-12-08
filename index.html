@@ -3,51 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Masía</title>
+    <title>La Masía - 2026</title>
+
     <style>
         body {
             margin: 0;
             padding: 0;
 
-            /* --- Fondo con imagen --- */
-            background-image: url("background.jpg"); /* Cambia extensión si toca */
+            background-image: url("background.jpg");
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: contain;  /* NO deforma la imagen */
-            background-color: black;   /* Bordes si la imagen no llena */
-            
-            /* --- Centrado del contenido --- */
+            background-size: contain;
+            background-color: black;
+
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Para colocar elementos en vertical */
             align-items: center;
             min-height: 100vh;
+            font-family: "Poppins", sans-serif;
+        }
 
-            font-family: Impact, sans-serif;
+        .title {
+            margin-top: 40px;   /* margen superior */
+            color: #4B0E14;     /* granate oscuro */
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 300;
         }
-        
-        .container {
-            text-align: center;
-            color: white;
-            text-shadow: 0 0 8px rgba(0,0,0,0.8);
-        }
-        
-        .banner {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 1rem;
-        }
-        
-        .emojis {
-            font-size: clamp(2rem, 6vw, 3rem);
-            margin-top: 1rem;
+
+        .subtitle {
+            margin-top: auto;  /* empuja hacia el centro relativo */
+            margin-bottom: 60px;
+            color: white;      /* blanco suave */
+            opacity: 0.9;      /* más suave */
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-weight: 200;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="banner">La Masía 2026</div>
-        <div class="emojis">próximamente</div>
-    </div>
+    <div class="title">La Masía 2026</div>
+    <div class="subtitle">Próximamente</div>
 </body>
 
 </html>
